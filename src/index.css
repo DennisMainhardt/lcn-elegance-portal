@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 50% 98%;
+    --foreground: 20 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 15%;
+
+    --primary: 18 40% 91%;
+    --primary-foreground: 20 10% 15%;
+
+    --secondary: 15 15% 95%;
+    --secondary-foreground: 20 10% 15%;
+
+    --muted: 30 10% 96%;
+    --muted-foreground: 20 5% 55%;
+
+    --accent: 12 30% 93%;
+    --accent-foreground: 20 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 20 5% 90%;
+    --input: 20 5% 90%;
+    --ring: 24 5% 64%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-beauty-soft-white text-beauty-charcoal font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3 {
+    @apply font-heading tracking-tight;
+  }
+
+  h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-lg bg-white/70 border border-white/30 shadow-elegant;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 px-6 md:px-12 lg:px-24;
+  }
+  
+  .beauty-button {
+    @apply inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium transition-all 
+    bg-beauty-rose shadow-button hover:shadow-elegant-hover hover:bg-beauty-rose-gold focus:outline-none focus:ring-2 focus:ring-beauty-rose-gold
+    disabled:pointer-events-none disabled:opacity-50;
+  }
+  
+  .beauty-container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .beauty-heading {
+    @apply font-heading font-light text-4xl md:text-5xl lg:text-6xl tracking-tight;
+  }
+  
+  .beauty-subheading {
+    @apply font-serif text-xl md:text-2xl text-beauty-charcoal/80;
+  }
+  
+  .animate-on-scroll {
+    @apply opacity-0;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-elegant-hover hover:-translate-y-1;
+  }
+  
+  .beauty-reveal-animation {
+    @apply transition-all duration-500 ease-out;
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  
+  .beauty-reveal-animation.revealed {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .shimmer {
+    @apply relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-shimmer before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent;
+  }
+}
+
+/* Scroll behavior and scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E7C8C8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
