@@ -2,7 +2,7 @@ import SectionHeading from "../ui/SectionHeading";
 
 const AboutSection = () => {
   return (
-    <section className="section-padding bg-beauty-cream">
+    <section id="about" className="section-padding bg-beauty-cream">
       <div className="beauty-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Image with elegant border */}
@@ -15,7 +15,7 @@ const AboutSection = () => {
               {/* Main image */}
               <div className="relative w-full overflow-hidden rounded-md shadow-elegant">
                 <img
-                  src="/uber_uns.jpg"
+                  src="/uber_uns.jpeg"
                   alt="LCN Beauty Center Salon"
                   className="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-300 hover:scale-105"
                   loading="eager"

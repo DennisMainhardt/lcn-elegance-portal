@@ -3,7 +3,7 @@ import { MapPin, Car, Train } from "lucide-react";
 
 const MapSection = () => {
   return (
-    <section className="section-padding bg-beauty-soft-white">
+    <section id="contact" className="section-padding bg-beauty-soft-white">
       <div className="beauty-container">
         <SectionHeading
           title="Besuchen Sie uns"

@@ -29,10 +29,10 @@ const services = [
 
 const ServicePreviewSection = () => {
   return (
-    <section className="section-padding bg-beauty-soft-white">
+    <section id="services" className="section-padding bg-beauty-soft-white">
       <div className="beauty-container">
         <SectionHeading
-          title="Unsere Services"
+          title="Unsere Leistungen"
           subtitle="Entdecken Sie unser vielfältiges Angebot an luxuriösen Behandlungen für Ihr Wohlbefinden"
         />
 
@@ -40,24 +40,24 @@ const ServicePreviewSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="rounded-md overflow-hidden shadow-card beauty-reveal-animation card-hover"
+              className="rounded-md overflow-hidden shadow-card beauty-reveal-animation card-hover bg-beauty-cream flex flex-col h-full"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden flex-shrink-0">
                 <img
                   src={service.image}
                   alt={service.name}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>
-              <div className="p-6 bg-white">
+              <div className="p-6 flex-grow flex flex-col">
                 <div className="flex justify-between items-start mb-3">
                   <h3 className="font-serif text-xl">{service.name}</h3>
                   <span className="text-beauty-gold font-medium">{service.price}</span>
                 </div>
-                <p className="text-beauty-charcoal/70 text-sm mb-4">{service.description}</p>
+                <p className="text-beauty-charcoal/70 text-sm mb-4 flex-grow">{service.description}</p>
                 <Link
                   to="/services"
-                  className="inline-flex items-center text-beauty-gold hover:text-beauty-gold/80 transition-colors"
+                  className="inline-flex items-center text-beauty-gold hover:text-beauty-gold/80 transition-colors mt-auto"
                 >
                   <span>Mehr erfahren</span>
                   <ChevronRight size={16} className="ml-1" />
@@ -73,7 +73,7 @@ const ServicePreviewSection = () => {
               to="/services"
               className="w-full sm:w-auto px-6 py-3 border border-beauty-rose rounded-md transition-colors hover:bg-beauty-rose/10 text-center"
             >
-              Alle Services anzeigen
+              Alle Leistungen anzeigen
             </Link>
             <BookingButton className="w-full sm:w-auto px-6 py-3" />
           </div>

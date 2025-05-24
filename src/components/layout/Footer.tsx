@@ -105,7 +105,7 @@ const Footer = () => {
             </p>
 
             {/* Newsletter - Optional */}
-            <div className="mt-4 md:mt-0">
+            {/* <div className="mt-4 md:mt-0">
               <form className="flex">
                 <input
                   type="email"
@@ -119,7 +119,7 @@ const Footer = () => {
                   Anmelden
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
