@@ -2,11 +2,6 @@
 
 A modern, responsive web portal for LCN Beauty Center by Lambert - a premium beauty salon located in Düsseldorf, Germany. This project showcases a professional business website with elegant design, comprehensive service listings, and integrated booking functionality.
 
-## 🖼️ Screenshots
-
-_Desktop View_
-![Desktop Screenshot](./screenshots/desktop_view.png)
-
 ## 🌐 Live Demo
 
 🚀 **[View Live Demo](https://lcn-elegance-portal.vercel.app/)**
