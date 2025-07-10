@@ -1,8 +1,32 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "lcn-elegance-portal",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A modern, responsive web portal for LCN Beauty Center by Lambert - a premium beauty salon in Düsseldorf, Germany",
+  "author": {
+    "name": "Dennis Mainhardt",
+    "email": "dennis.mainhardt@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/dennismainhardt/lcn-elegance-portal#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennismainhardt/lcn-elegance-portal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dennismainhardt/lcn-elegance-portal/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "beauty-salon",
+    "business-website",
+    "responsive-design",
+    "tailwind-css",
+    "vite",
+    "shadcn-ui"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
